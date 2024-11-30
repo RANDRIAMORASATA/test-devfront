@@ -2,10 +2,11 @@ const path = require('path');
 const generatePalette = require(path.resolve(__dirname, ('dev/tailwind/utils/generate-palette')));
 
 const customPalettes = {
-        primary: generatePalette('#BF2A6B'),
-        secondary:generatePalette('#36578A'),
-        accent: generatePalette('#434343'),
-};
+    primary: '#BF2A6B',
+    dark: '#434343',
+    secondary: '#36578A',
+    accent: '#E9E9E9',
+  };
 
 module.exports = {
         content: [
@@ -17,8 +18,11 @@ module.exports = {
         theme: {
                 extend: {
                         colors: {
-                                primary: customPalettes.primary,
-                                accent: customPalettes.accent
+                           primary: '#BF2A6B',
+                           secondary:'#36578A',
+                           accent: '#E9E9E9',
+                           gray:'#7A7878',
+                           dark:'#434343'
                         },
 
                         fontFamily: {
@@ -43,6 +47,17 @@ module.exports = {
                         }
                 },
         },
-        plugins: [],
+        plugins: [
+            function ({ addBase, theme }) {
+                addBase({
+                  ':root': {
+                    '--primary': theme('colors.primary'),
+                    '--accent': theme('colors.accent'),
+                    '--secondary': theme('colors.secondary'),
+                    '--dark': theme('colors.dark'),
+                  },
+                });
+              },
+        ],
 }
 
