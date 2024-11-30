@@ -1,7 +1,16 @@
-@extends('layouts.home')
-@section('content')
+<!DOCTYPE html>
+<html lang="en">
 
-    <h1 class="text-2xl font-bold">Welcome</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ config('app.name', 'Laravel') }}</title>
+    @vite(['resources/js/app.js', 'resources/scss/app.scss'])
+</head>
 
-@stop
+<body>
+    <div id="app">
+    </div>
+</body>
 
+</html>

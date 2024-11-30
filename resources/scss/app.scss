@@ -1,5 +1,78 @@
 @use "components/fonts";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Lato';
+    src        : url('/fonts/Lato/lato-bold.woff') format('woff2'),
+        url('/fonts/Lato/lato-bold.woff') format('woff');
+    font-weight: 400;
+    font-style : normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src        : url('/fonts/Lato/lato-bold.woff') format('woff2'),
+        url('/fonts/Lato/lato-bold.woff') format('woff');
+    font-weight: 700;
+    font-style : normal;
+}
+
+
+
+@font-face {
+    font-family: 'Nunito';
+    src        : url('/fonts/Nunito/Nunito-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style : normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src        : url('/fonts/Nunito/Nunito-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style : normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src        : url('/fonts/Nunito/Nunity-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style : normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src        : url('/fonts/Nunito/Nunity-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style : normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src        : url('/fonts/Nunito/Nunity-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style : normal;
+}
+
+
+.font-sans {
+    font-family: 'Nunito', sans-serif;
+}
+
+.font-lato {
+    font-family: 'Lato';
+}
+
+
+.container {
+    @apply mx-auto px-4;
+}
+
+.b {
+    border: 1px solid black;
+}
