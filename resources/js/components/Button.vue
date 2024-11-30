@@ -81,7 +81,5 @@ export default {
     background-color: var(--dark);
 }
 
-.rounded-custom {
-    border-radius: 100px;
-}
+
 </style>

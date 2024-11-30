@@ -6,6 +6,8 @@ const customPalettes = {
     dark: '#434343',
     secondary: '#36578A',
     accent: '#E9E9E9',
+    gray:'#7A7878',
+    white:'#ffff',
   };
 
 module.exports = {
@@ -22,7 +24,8 @@ module.exports = {
                            secondary:'#36578A',
                            accent: '#E9E9E9',
                            gray:'#7A7878',
-                           dark:'#434343'
+                           dark:'#434343',
+                           white:'#ffff',
                         },
 
                         fontFamily: {
@@ -55,6 +58,9 @@ module.exports = {
                     '--accent': theme('colors.accent'),
                     '--secondary': theme('colors.secondary'),
                     '--dark': theme('colors.dark'),
+                    '--gray':theme('colors.gray'),
+                    '--white':theme('colors.white'),
+
                   },
                 });
               },
