@@ -19,8 +19,10 @@
             <FilterDropdown label="Filter par démi-journée" filter="Demi-journée" :options="demiJourneeOptions"
                 class="w-full" />
         </div>
-        <FilterDropdown customClass="bg-none" label="Choisir un département" filter="Departement" :options="departement"
-            class="w-full" />
+        <FilterDropdown customClass="px-3 bg-none" label="Choisir un département" filter="Departement"
+            :options="departement" class="w-full" />
+        <SearchProgressBar />
+        <StepList />
     </div>
 </template>
 
@@ -28,6 +30,8 @@
 import Button from './Button.vue';
 import FilterDropdown from './FilterDropdown.vue';
 import Search from './Search.vue';
+import SearchProgressBar from './SearchProgressBar.vue';
+import StepList from './StepList.vue';
 
 export default {
     name: 'Home',
@@ -35,6 +39,8 @@ export default {
         Button,
         FilterDropdown,
         Search,
+        SearchProgressBar,
+        StepList
     },
     data() {
         return {

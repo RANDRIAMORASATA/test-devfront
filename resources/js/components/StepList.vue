@@ -1,0 +1,80 @@
+<template>
+    <div class="p-4 max-w-xl mx-auto dark:bg-gray-800">
+        <div v-for="(step, index) in steps" :key="step.id" class="flex ">
+            <div class="mr-4 flex flex-col items-center relative">
+                <div>
+                    <div class="flex h-10 w-10 items-center justify-center rounded-full" :class="{
+                        'border-2 border-transparent bg-primary p-2 color-white': step.completed,
+                        'border-2 border-transparent bg-white color-primary bg-none flex  justify-center': !step.completed
+                    }">
+                        <span class="text-lg">{{ step.id }}</span>
+                    </div>
+                </div>
+
+                <div v-if="index < steps.length - 1"
+                    class="absolute top-10 left-1/2 transform -translate-x-1/2  w-px h-connexion-steps  bg-gray-300 dark:bg-slate-500">
+                </div>
+            </div>
+
+            <div class="pt-1 pb-8">
+                <span class=" title text-gray-800 text-bold ">
+                    {{ step.title }}
+                </span>
+                <span class="text-gray-600 ">{{ step.description }}</span>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'StepList',
+    data() {
+        return {
+            steps: [
+                {
+                    id: 1,
+                    title: 'Step 1 : ',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis.',
+                    completed: true
+                },
+                {
+                    id: 2,
+                    title: 'Step 2 : ',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis.',
+                    completed: false
+                },
+                {
+                    id: 3,
+                    title: 'Step 3 : ',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis.',
+                    completed: false
+                }
+            ]
+        };
+    }
+};
+</script>
+
+<style scoped>
+.h-connexion-steps {
+    height: 50%;
+}
+
+.bg-none {
+    padding-right: -10px;
+}
+</style>
+<style>
+.color-white {
+    color: var(--white);
+}
+
+.color-primary {
+    color: var(--primary);
+}
+
+.title {
+    font-weight: bold;
+}
+</style>

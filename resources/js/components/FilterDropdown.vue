@@ -3,7 +3,6 @@
         <div class="dropdown-container relative">
             <div :class="[customClass || 'border-gray-light', 'dropdown-input flex justify-between items-center  py-2  cursor-pointer']"
                 @click="toggleDropdown">
-
                 <input v-model="selectedValue" :id="filter" :placeholder="` ${label}`"
                     class="dropdown w-3/4 bg-transparent text-gray-700 outline-none" readonly />
                 <i class="fas fa-chevron-down dropdown-icon text-gray-600"></i>
@@ -66,11 +65,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .bg-none {
     background-color: transparent;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    padding-right: 10px;
+
 }
 
 .bg-gray-light {
