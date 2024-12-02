@@ -23,6 +23,7 @@
             :options="departement" class="w-full" />
         <SearchProgressBar />
         <StepList />
+        <UserFeedback />
     </div>
 </template>
 
@@ -32,6 +33,7 @@ import FilterDropdown from './FilterDropdown.vue';
 import Search from './Search.vue';
 import SearchProgressBar from './SearchProgressBar.vue';
 import StepList from './StepList.vue';
+import UserFeedback from './UserFeedback.vue';
 
 export default {
     name: 'Home',
@@ -40,7 +42,8 @@ export default {
         FilterDropdown,
         Search,
         SearchProgressBar,
-        StepList
+        StepList,
+        UserFeedback
     },
     data() {
         return {
