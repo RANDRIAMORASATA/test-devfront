@@ -24,12 +24,16 @@
         <SearchProgressBar />
         <StepList />
         <UserFeedback />
+        <PropertyCard :day="'Lundi'" :date="'4 Nov 2024'" :address="'50 Avenue D, 20233 Thierry'"
+            :urgentText="'Dernière place à cette date'" :newPrice="'€150'" :oldPrice="'€200'"
+            :availability="'3 places disponibles à cette date'" />
     </div>
 </template>
 
 <script>
 import Button from './Button.vue';
 import FilterDropdown from './FilterDropdown.vue';
+import PropertyCard from './PropertyCard.vue';
 import Search from './Search.vue';
 import SearchProgressBar from './SearchProgressBar.vue';
 import StepList from './StepList.vue';
@@ -43,7 +47,8 @@ export default {
         Search,
         SearchProgressBar,
         StepList,
-        UserFeedback
+        UserFeedback,
+        PropertyCard
     },
     data() {
         return {
