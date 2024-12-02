@@ -7,12 +7,12 @@
                         'border-2 border-transparent bg-primary p-2 color-white': step.completed,
                         'border-2 border-transparent bg-white color-primary bg-none flex  justify-center': !step.completed
                     }">
-                        <span class="text-lg">{{ step.id }}</span>
+                        <span class="text-lg font-semibold">{{ step.id }}</span>
                     </div>
                 </div>
 
                 <div v-if="index < steps.length - 1"
-                    class="absolute top-10 left-1/2 transform -translate-x-1/2  w-px h-connexion-steps  bg-gray-300 dark:bg-slate-500">
+                    class="absolute top-10 left-1/2 transform -translate-x-1/2  w-px h-connexion-steps  dark:bg-slate-500">
                 </div>
             </div>
 
@@ -59,6 +59,9 @@ export default {
 <style scoped>
 .h-connexion-steps {
     height: 50%;
+    width: 2px;
+    ;
+    background-color: var(--primary);
 }
 
 .bg-none {

@@ -1,24 +1,28 @@
 <template>
-    <div class="flex flex-col items-center justify-center w-full max-w-sm">
-        <div class="flex items-center space-x-2 mb-4">
-            <div class="w-6 h-6 rounded-full border-2  animate-pulse" :class="{
-                'border-blue': isSearching,
-                'bg-white': !isSearching,
-            }"></div>
-            <span class="text-lg font-semibold">
+    <div class="flex flex-col items-center justify-center w-full max-w">
+        <div class="flex items-center space-x-2 mb-4 w-full">
+            <div class="relative w-5 h-5 rounded-full border-2 border-gray animate-spin" :style="{
+                'border-top-color': isSearching ? 'blue' : 'gray',
+                'transform': 'rotate(' + (progressPercentage * 3.6) + 'deg)',
+            }">
+
+            </div>
+            <span class="text-lg font-gray">
                 {{ isSearching ? 'Recherche en cours' : 'Recherche terminée' }}
             </span>
         </div>
         <div class="w-full">
-            <div class="relative">
-                <div class="h-2 rounded-full bg-gray-200" :style="{ width: progressPercentage + '%' }"></div>
-                <div v-if="isSearching" class="absolute top-0 left-0 flex items-center justify-center w-full h-full">
-                    <span class="text-sm font-semibold text-blue-500">{{ progressPercentage }}%</span>
+            <div class="relative w-full w-full bg-gray h-1">
+                <div class="h-1 rounded-full bg-gray-200 w-full w-full">
+                    <div :style="{ width: progressPercentage + '%' }" class="w-full h-full bg-blue-500 rounded-full">
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
 </template>
+
 <script>
 export default {
     name: "SearchProgressBar",
@@ -51,7 +55,8 @@ export default {
     },
 }
 </script>
-<style>
+
+<style scoped>
 .border-blue {
     border: 2px solid var(--secondary);
 }
