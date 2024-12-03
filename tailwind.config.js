@@ -36,16 +36,12 @@ module.exports = {
                                 'title': ['Lato']
                         },
                         container:{
-                            center: true,
                             padding: {
-                                DEFAULT: '1rem',
+                                DEFAULT: '6rem',
                                 sm: '2rem',
                             },
                             screens:{
-                                sm: '100%',
-                                md:'768px',
-                                lg:'1684px',
-                                xl:'1684px'
+
                             }
                         }
                 },

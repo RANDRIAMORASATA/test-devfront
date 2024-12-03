@@ -1,7 +1,7 @@
 <template>
-    <div class="container">
-        <LandingPage />
-    </div>
+
+    <LandingPage />
+
 </template>
 
 <script>

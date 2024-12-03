@@ -58,15 +58,10 @@ export default {
     right: 1.5rem;
 
 }
-
-.btn-primary {
-    height: 76px;
-}
 </style>
 <style scoped>
 .bg-primary {
     background-color: var(--primary);
-    height: 76px;
 }
 
 .bg-secondary {
@@ -80,6 +75,4 @@ export default {
 .bg-dark {
     background-color: var(--dark);
 }
-
-
 </style>
