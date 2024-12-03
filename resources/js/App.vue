@@ -1,19 +1,19 @@
 <template>
     <div class="container">
-        <Home />
+        <LandingPage />
     </div>
 </template>
 
 <script>
 import Home from './components/Home.vue';
+import LandingPage from './pages/LandingPage.vue';
 export default {
     name: 'App',
     components: {
-        Home
+        LandingPage,
     }
 
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
