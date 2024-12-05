@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Jean Mido",
+        "rating": 5,
+        "review": "Service excellent, je suis très satisfait !Service excellent, je suis très satisfait !Service excellent, je suis très satisfait !",
+        "createdAt": "2024-12-01",
+        "avatar": "/images/avatar.jpg"
+    },
+    {
+        "name": "Marie Leclerc",
+        "rating": 4,
+        "review": "Très bonne expérience, mais il y a encore des points à améliorer.Très bonne expérience, mais il y a encore des points à améliorer.Très bonne expérience, mais il y a encore des points à améliorer.Très bonne expérience, mais il y a encore des points à améliorer.",
+        "createdAt": "2024-12-02",
+        "avatar": "/images/avatar.jpg"
+    },
+    {
+        "name": "Pierre Martin",
+        "rating": 3,
+        "review": "C'était correct, mais pas à la hauteur de mes attentes.",
+        "createdAt": "2024-12-03",
+        "avatar": "/images/avatar.jpg"
+    },
+    {
+        "name": "Jean De Dieu",
+        "rating": 4,
+        "review": "Service excellent, je suis très satisfait !",
+        "createdAt": "2024-12-04",
+        "avatar": "/images/avatar.jpg"
+    },
+    {
+        "name": "Claire De Louis",
+        "rating": 5,
+        "review": "Une expérience formidable, je recommande vivement !",
+        "createdAt": "2024-12-05",
+        "avatar": "/images/avatar.jpg"
+    },
+    {
+        "name": "Lucie Soa",
+        "rating": 2,
+        "review": "Le service n'était pas à la hauteur de mes attentes, déçue.",
+        "createdAt": "2024-12-06",
+        "avatar": "/images/avatar.jpg"
+    },
+    {
+        "name": "Julien Tsimialo",
+        "rating": 4,
+        "review": "Bon service, mais il y a encore quelques améliorations à apporter.",
+        "createdAt": "2024-12-07",
+        "avatar": "/images/avatar.jpg"
+    },
+    {
+        "name": "Sophie Phanoel",
+        "rating": 5,
+        "review": "Superbe expérience, je reviendrai sans hésiter !",
+        "createdAt": "2024-12-08",
+        "avatar": "/images/avatar.jpg"
+    },
+    {
+        "name": "Marc Nantenaina",
+        "rating": 3,
+        "review": "Moyenne, rien de spécial, je m'attendais à mieux.",
+        "createdAt": "2024-12-09",
+        "avatar": "/images/avatar.jpg"
+    },
+    {
+        "name": "Alice Rasoa",
+        "rating": 4,
+        "review": "Très bonne expérience dans l'ensemble, mais quelques améliorations possibles.",
+        "createdAt": "2024-12-10",
+        "avatar": "/images/avatar.jpg"
+    },
+    {
+        "name": "Angella Randria",
+        "rating": 5,
+        "review": "Service exceptionnel, tout était parfait !",
+        "createdAt": "2024-12-11",
+        "avatar": "/images/avatar.jpg"
+    }
+]
