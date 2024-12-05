@@ -1,5 +1,5 @@
 <template>
-    <div class="p-4 max-w-xl mx-auto dark:bg-gray-800">
+    <div class="max-w-xl mx-auto dark:bg-gray-800">
         <div v-for="(step, index) in steps" :key="step.id" class="flex ">
             <div class="mr-4 flex flex-col items-center relative">
                 <div>
@@ -29,30 +29,12 @@
 <script>
 export default {
     name: 'StepList',
-    data() {
-        return {
-            steps: [
-                {
-                    id: 1,
-                    title: 'Step 1 : ',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis.',
-                    completed: true
-                },
-                {
-                    id: 2,
-                    title: 'Step 2 : ',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis.',
-                    completed: false
-                },
-                {
-                    id: 3,
-                    title: 'Step 3 : ',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis.',
-                    completed: false
-                }
-            ]
-        };
-    }
+    props: {
+        steps: {
+            type: Array,
+            required: true,
+        },
+    },
 };
 </script>
 

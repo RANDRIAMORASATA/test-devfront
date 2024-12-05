@@ -2,13 +2,10 @@
     <div class="flex   md:flex-row gap-1  border-gray-light-full w-full">
         <div class=" flex flex-1 flex-col justify-center">
             <div class="grid grid-cols-1 md:grid-cols-2 border-b border-gray-light-bottom ml-2 mr-2">
-                <!-- Section Jour et Date -->
                 <div class="p-4 flex  flex-col gap-2">
                     <div class="font-bold text-xm">{{ day }}</div>
                     <div class="text-xm">{{ date }}</div>
                 </div>
-
-                <!-- Section Adresse -->
                 <div class="p-4 flex items-center">
                     <i class="fas fa-map-marker-alt mr-2"></i>
                     <span class="text-xs">{{ address }}</span>

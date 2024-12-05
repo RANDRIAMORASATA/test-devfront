@@ -39,9 +39,13 @@ module.exports = {
                             padding: {
                                 DEFAULT: '6rem',
                                 sm: '2rem',
+                                md: '2rem',
+                                lg: '2rem',
+                                xl: '3rem',
+
                             },
                             screens:{
-
+                                lg: '1024px',
                             }
                         }
                 },

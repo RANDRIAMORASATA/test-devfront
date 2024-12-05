@@ -73,3 +73,10 @@
     border: 1px solid black;
 }
 
+
+@media screen and (max-width:950px) {
+    .container {
+        display       : flex;
+        flex-direction: column;
+    }
+}

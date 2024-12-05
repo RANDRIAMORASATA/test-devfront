@@ -75,4 +75,10 @@ export default {
 .bg-dark {
     background-color: var(--dark);
 }
+
+@media screen and (max-width:750px) {
+    .btn {
+        font-size: 0.8rem;
+    }
+}
 </style>
