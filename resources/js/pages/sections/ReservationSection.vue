@@ -6,11 +6,11 @@
             <Search customClass="rounded-custom mb-4 w-full mt-6"></Search>
 
             <div class="filter-container w-full flex  justify-between pt-4 pb-2 px-4  bg-gray-light rounded-lg gap-6">
-                <FilterDropdown label="Filter par mois" filter="Mois" :options="moisOptions" class="w-[20%]" />
-                <FilterDropdown label="Filter par jour" filter="Jour" :options="jourOptions" class="w-[20%]"
+                <FilterDropdown label="Filter par mois" filter="Mois" :options="moisOptions" class="w-[20%] " />
+                <FilterDropdown label="Filter par jour" filter="Jour" :options="jourOptions" class="w-[20%] "
                     :noBorder="false" />
                 <FilterDropdown label="Filter par démi-journée" filter="Demi-journée" :options="demiJourneeOptions"
-                    class="w-[20%]" />
+                    class="w-[20%] t" />
                 <div class="btns w-[20%] flex flex-col">
                     <button
                         class="bg-dark  font-lato text-white px-6 py-2 font-semibold rounded-lg focus:outline-none mb-1">Filtrer</button>
@@ -36,7 +36,7 @@
                 </div>
 
             </div>
-            <span class="text-xs"> 12 résultats </span>
+            <span class="text-xs mt-1"> 12 résultats </span>
             <SearchProgressBar />
             <div class="places-reservation w-full flex justify-between">
                 <div class="places w-[75%] flex justify-between py-10 flex-col gap-1">
@@ -318,3 +318,5 @@ export default {
 
 }
 </style>
+
+<style></style>

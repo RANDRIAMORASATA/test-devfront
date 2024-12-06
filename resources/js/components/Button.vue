@@ -49,7 +49,7 @@ export default {
 
 
 .btn:hover {
-    background-color: darken(var(--primary), 10%);
+    background-color: var(--secondary);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
     color: var(--accent);
 }
@@ -59,7 +59,7 @@ export default {
 
 }
 </style>
-<style scoped>
+<style>
 .bg-primary {
     background-color: var(--primary);
 }

@@ -13,7 +13,7 @@
                     </div>
                     <div
                         class="w-full lg:w-1/2 psychotechnical-steps-container pl-6 flex flex-col justify-center items-start">
-                        <div class="title text-xl color-primary font-bold text-center">
+                        <div class="title text-xl color-primary font-bold text-center mb-6">
                             Votre test psychotechnique en 3 étapes :
                         </div>
                         <StepList :steps="steps" />
@@ -30,7 +30,7 @@
                 <div class="container  mx-auto flex justify-between  gap-x-8">
                     <div
                         class="w-full lg:w-1/2 psychotechnical-steps-container pl-6 flex flex-col justify-center items-start">
-                        <div class="title text-xl color-primary font-bold text-center">
+                        <div class="title text-xl color-primary font-bold text-center mb-6">
                             Votre test psychotechnique en 3 étapes :
                         </div>
                         <StepList :steps="steps" />
@@ -105,6 +105,7 @@ export default {
 
     .psychotechnical-steps-container {
         order: 1;
+        align-items: center;
     }
 
     .training-description-container .psychotechnical-image-container {
@@ -128,6 +129,8 @@ export default {
         order: initial;
 
     }
+
+
 
 }
 </style>

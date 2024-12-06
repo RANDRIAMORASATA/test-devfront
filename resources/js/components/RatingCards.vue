@@ -1,6 +1,6 @@
 <template>
-    <div class="rating-card flex justify-between gap-1 ">
-        <div class=" p-4 border-gray-light-full flex flex-col items-center justify-center">
+    <div class="rating-card flex justify-between gap-1 w-full ">
+        <div class=" p-4 border-gray-light-full flex flex-col items-center justify-center w-[50%]">
             <div class="flex items-center justify-between space-x-2">
                 <img :src="google" alt="google" class="w-[15px]" />
             </div>
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <div class="p-4 border-gray-light-full">
+        <div class="p-4 border-gray-light-full w-[50%]">
             <div class="flex items-center justify-center space-x-2">
                 <i class=" text-xs text-sm fa-solid fa-star color-green"></i>
                 <span class="text-sm font-semibold">TrustPilot</span>

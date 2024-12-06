@@ -32,7 +32,7 @@
 
             <div class="text-xs mt-1">Après rembourssement</div>
             <div class="mt-1 ">
-                <button class="bg-primary text-white py-1 px-4 rounded hover:bg-green-600">Réserver</button>
+                <button class="bg-primary text-white py-1 px-4 rounded hover:bg-secondary">Réserver</button>
             </div>
             <div class="text-xxs mt-1 text-center">{{ availability }}</div>
 

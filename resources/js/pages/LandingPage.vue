@@ -5,6 +5,7 @@
     <TestimonialsSection />
     <AccordionSection />
     <ReservationSection />
+    <Footer/>
 </template>
 
 <script>
@@ -15,6 +16,7 @@ import PresentationSection from './sections/PresentationSection.vue';
 import PsychotechnicalSection from './sections/PsychotechnicalSection.vue';
 import TestimonialsSection from './sections/TestimonialsSection.vue';
 import ReservationSection from './sections/ReservationSection.vue';
+import Footer from './sections/Footer.vue';
 
 export default {
     name: 'LandingPage',
@@ -24,7 +26,8 @@ export default {
         FeedbacksSection,
         TestimonialsSection,
         AccordionSection,
-        ReservationSection
+        ReservationSection,
+        Footer
     },
 }
 </script>

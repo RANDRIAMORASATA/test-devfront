@@ -5,8 +5,9 @@
             <i class="icon-search fas fa-map-marker-alt mr-2 absolute left-4 "></i>
             <input type="text" v-model="searchQuery" placeholder="Rechercher..."
                 class=" w-full pl-6 bg-transparent text-gray-700 focus:outline-none  " />
-            <i class="icon fa-regular fa-paper-plane ml-1 absolute send "></i>
-            <Button color="secondary" customClass="rounded-custom " :showIcon="false">RECHERCHER</Button>
+
+            <Button color="secondary" customClass="rounded-custom relative" :showIcon="false"><i
+                    class="icon fa-regular fa-paper-plane ml-1 absolute send "></i>RECHERCHER</Button>
         </div>
     </div>
 
@@ -81,18 +82,11 @@ button i {
 </style>
 <style scoped>
 .search i.send {
-    left: 73%;
+    left: -5rem;
     font-size: 1.5rem;
 }
 
 .search i.icon-search {
     font-size: 2rem;
-}
-
-@media screen and (max-width:1024px) {
-    .search i.send {
-        left: 42%;
-        font-size: 1.5rem;
-    }
 }
 </style>
