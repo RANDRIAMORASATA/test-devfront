@@ -7,7 +7,7 @@
                         <div class="relative w-full h-auto">
                             <img src="https://fakeimg.pl/300x200/" alt="Image 1" class="w-full h-auto">
                             <img src="https://fakeimg.pl/300/" alt="Image 3"
-                                class="absolute top-[15px] right-[-3rem] w-[8rem] h-[8rem] rounded-full">
+                                class="absolute top-[15px] right-[-3rem] w-[8rem] h-[8rem] rounded-full image3">
 
                         </div>
                     </div>
@@ -122,6 +122,11 @@ export default {
         padding-right: 0 !important;
 
     }
+
+    img.image3 {
+        right: 0;
+        left: -2rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -132,6 +137,8 @@ export default {
 
 
     }
+
+
 
 
 

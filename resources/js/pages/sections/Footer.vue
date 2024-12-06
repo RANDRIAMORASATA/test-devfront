@@ -206,16 +206,29 @@
         </div>
         <div class="last-footer flex bg-dark p-2 text-white w-full justify-between ">
             <div class="regles flex-1 flex w-[70%] justify-start items-center pr-5 pl-4 ">
-                <span class="text-sm mr-2"><a href="#">Mentions Légales </a></span>
-                <span class="text-sm mr-2"><a href="#"> - </a></span>
-                <span class="text-sm mr-2"><a href="#"> CGV </a></span>
-                <span class="text-sm mr-2"> - </span>
-                <span class="text-sm mr-2"><a href="#"> Données professionnels </a></span>
-                <span class="text-sm mr-2"> - </span>
-                <span class="text-sm mr-2"><a href="#"> Offres de rembourssement </a></span>
-                <span class="text-sm mr-2"> - </span>
-                <span class="text-sm mr-2"><a href="#"> Plateforme de Règlement en Ligne des
-                        Litiges(contact[at]aaaep.fr)</a></span>
+                <span class="text-sm mr-2  highlight-container"><a href="#" class="highlight-text">Mentions Légales </a>
+                    <hr class="highlight-line">
+                </span>
+                <span class="text-sm mr-2 "><a href="#"> - </a></span>
+                <span class="text-sm mr-2 highlight-container "><a href="#" class="highlight-text"> CGV </a>
+                    <hr class="highlight-line">
+                </span>
+                <span class="text-sm mr-2 "> - </span>
+                <span class="text-sm mr-2 highlight-container "><a href="#" class="highlight-text"> Données
+                        professionnels </a>
+                    <hr class="highlight-line">
+                </span>
+                <span class="text-sm mr-2  highlight-container"> - </span>
+                <span class="text-sm mr-2 highlite-container "><a href="#" class="highlight-text"> Offres de
+                        rembourssement </a>
+                    <hr class="highlight-line">
+                </span>
+                <span class="text-sm mr-2 "> - </span>
+                <span class="text-sm mr-2  highlight-container"><a href="#" class="highlight-text"> Plateforme de
+                        Règlement en Ligne des
+                        Litiges(contact[at]aaaep.fr)</a>
+                    <hr class="highlight-line">
+                </span>
             </div>
             <div class=" socials flex w-[30%] justify-end items-center gap-2 pr-4 ">
                 <span class="fb"><i class="fa-brands fa-facebook"></i></span>
@@ -248,6 +261,43 @@ export default {
 </script>
 
 <style scoped>
+span.highlight-container {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.highlight-text {
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.highlight-line {
+    margin: 0;
+    border: none;
+    border-top: 0.2px dotted #fdfdfd;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.highlight-line::before,
+.highlight-line::after {
+    content: "•";
+    position: absolute;
+    font-size: 18px;
+    color: #000;
+    top: -8px;
+}
+
+.highlight-line::before {
+    left: -10px;
+}
+
+.highlight-line::after {
+    right: -10px;
+}
+
 .footer {
     background-color: #f5f5f5;
 }
@@ -265,6 +315,9 @@ export default {
     flex-wrap: wrap;
 }
 
+
+
+
 @media screen and (max-width: 1024px) {
     .last-footer {
         flex-direction: column;
@@ -280,7 +333,13 @@ export default {
         margin-bottom: -2rem;
     }
 
-    .last-footer .regles,
+    .last-footer .regles {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
     .last-footer .socials {
         width: 100%;
         display: flex;
