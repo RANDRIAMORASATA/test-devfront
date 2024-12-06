@@ -59,6 +59,6 @@ export default {
 <style scoped></style>
 <style>
 .text-xxs {
-    font-size: 10px;
+    font-size: 8px;
 }
 </style>

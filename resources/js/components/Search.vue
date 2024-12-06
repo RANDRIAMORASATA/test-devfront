@@ -1,12 +1,12 @@
 <template>
-    <div :class="[customClass, 'relative search rounded-custom w-full max-w-4xl mx-auto  px-4 py-2 shadow-2xl']">
+    <div :class="[customClass, 'relative search rounded-custom w-full   px-6 py-3 shadow-2xl']">
 
         <div class="flex items-center space-x-4 ">
-            <i class="icon-search fas fa-map-marker-alt mr-2 absolute left-8 "></i>
+            <i class="icon-search fas fa-map-marker-alt mr-2 absolute left-4 "></i>
             <input type="text" v-model="searchQuery" placeholder="Rechercher..."
-                class=" w-full pl-10 bg-transparent text-gray-700 focus:outline-none  " />
-            <i class="icon fa-regular fa-paper-plane ml-2 absolute send "></i>
-            <Button color="secondary" customClass="rounded-custom" :showIcon="false">RECHERCHER</Button>
+                class=" w-full pl-6 bg-transparent text-gray-700 focus:outline-none  " />
+            <i class="icon fa-regular fa-paper-plane ml-1 absolute send "></i>
+            <Button color="secondary" customClass="rounded-custom " :showIcon="false">RECHERCHER</Button>
         </div>
     </div>
 
@@ -81,7 +81,7 @@ button i {
 </style>
 <style scoped>
 .search i.send {
-    left: 68%;
+    left: 73%;
     font-size: 1.5rem;
 }
 

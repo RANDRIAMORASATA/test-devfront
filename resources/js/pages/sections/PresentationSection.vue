@@ -202,7 +202,7 @@ ul li {
 }
 
 .bg-gray-light-presentation {
-    background-color: #F8F9FB;
+    background-color: var(--accentLight);
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.10) 0px 2px 4px -1px;
 }

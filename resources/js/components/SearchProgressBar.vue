@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center justify-center w-full max-w">
+    <div class="flex flex-col items-center justify-center w-full max-w mt-10">
         <div class="flex items-center space-x-2 mb-4 w-full">
             <div class="relative w-5 h-5 rounded-full border-2 border-gray animate-spin" :style="{
                 'border-top-color': isSearching ? 'blue' : 'gray',

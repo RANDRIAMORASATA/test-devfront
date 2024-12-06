@@ -1,10 +1,10 @@
 <template>
     <div class="filter-dropdown w-full">
         <div class="dropdown-container relative">
-            <div :class="[customClass || 'border-gray-light', 'dropdown-input flex justify-between items-center  py-2  cursor-pointer']"
+            <div :class="[customClass || 'border-gray-light', 'dropdown-input flex justify-between items-center  py-2  cursor-pointer text-gray-600']"
                 @click="toggleDropdown">
                 <input v-model="selectedValue" :id="filter" :placeholder="` ${label}`"
-                    class="dropdown w-3/4 bg-transparent text-gray-700 outline-none" readonly />
+                    class="dropdown w-3/4 bg-transparent  outline-none" readonly />
                 <i class="fas fa-chevron-down dropdown-icon text-gray-600"></i>
             </div>
 
@@ -73,7 +73,7 @@ export default {
 }
 
 .bg-gray-light {
-    background-color: var(--accent);
+    background-color: var(--accentLight);
 }
 
 .color-gray-light {
@@ -89,5 +89,10 @@ export default {
     border-left: 0.1px solid var(--accent);
     border-right: 0.1px solid var(--accent);
     border-bottom: 0.1px solid var(--accent);
+}
+</style>
+<style scoped>
+.dropdown::placeholder {
+    color: black;
 }
 </style>

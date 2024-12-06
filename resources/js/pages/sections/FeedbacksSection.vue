@@ -13,17 +13,17 @@
                                 <span v-else class="text-yellow-500">★</span>
                             </span>
                         </div>
-                        <div class="text-xs">
-                            <span>Based on</span>
+                        <div class="">
+                            <span class="text-xs">Based on</span>
                             <span class="text-xs font-bold underline text-black">414 reviews</span>
                         </div>
-                        <div class="google-logo-large w-[80px]">
-                            <img :src="googleLarge" alt="google">
+                        <div class="google-logo-large w-[8rem] relative">
+                            <img :src="googleLarge" alt="google" class="absolute top-[-3rem]">
                         </div>
                     </div>
                     <div class="relative slides flex flex-1 gap-x-2">
                         <div @click="moveSlide(-1)"
-                            class="absolute prev text-xl text-gray top-[50%] left-[-25px] cursor-pointer">
+                            class="absolute prev text-sm text-accent top-[50%] left-[-25px] cursor-pointer">
                             <i class="fa-solid fa-chevron-left"></i>
                         </div>
 
@@ -33,7 +33,7 @@
                         </div>
 
                         <div @click="moveSlide(1)"
-                            class="absolute next text-xl text-gray top-[50%] right-[-25px] cursor-pointer">
+                            class="absolute next text-sm text-accent top-[50%] right-[-25px] cursor-pointer">
                             <i class="fa-solid fa-angle-right"></i>
                         </div>
 

@@ -5,9 +5,10 @@
                 <div class="container  mx-auto flex justify-between  gap-x-8">
                     <div class="w-full lg:w-1/2 psychotechnical-image-container pr-6 flex justify-right ">
                         <div class="relative w-full h-auto">
-                            <img :src="image1" alt="Image 1" class="w-full h-auto">
-                            <img :src="image3" alt="Image 3"
+                            <img src="https://fakeimg.pl/300/" alt="Image 1" class="w-full h-auto">
+                            <img src="https://fakeimg.pl/300/" alt="Image 3"
                                 class="absolute top-[15px] right-[-3rem] w-[8rem] h-[8rem] rounded-full">
+
                         </div>
                     </div>
                     <div
@@ -38,7 +39,8 @@
 
                     <div class="w-full lg:w-1/2 psychotechnical-image-container pr-6 flex justify-right ">
                         <div class="w-full h-auto">
-                            <img :src="image4" alt="Image 4" class="w-full h-auto">
+                            <img src="https://fakeimg.pl/300/" alt="Image 4" class="w-full h-auto">
+
                         </div>
                     </div>
 

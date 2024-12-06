@@ -8,6 +8,7 @@ const customPalettes = {
     accent: '#E9E9E9',
     gray:'#7A7878',
     white:'#ffff',
+    accentLight:'#F8F9FB'
   };
 
 module.exports = {
@@ -23,10 +24,14 @@ module.exports = {
                            primary: '#BF2A6B',
                            secondary:'#36578A',
                            accent: '#E9E9E9',
+                           accentLight: '#F8F9FB',
                            gray:'#7A7878',
                            dark:'#434343',
                            white:'#ffff',
                         },
+                        boxShadow: {
+                                'bow-bottom': '0px 1px 0 0 rgba(0, 0, 0, 0.1)'
+                            },
 
                         fontFamily: {
                                 'sans': ['Nunito'],
@@ -60,6 +65,7 @@ module.exports = {
                     '--dark': theme('colors.dark'),
                     '--gray':theme('colors.gray'),
                     '--white':theme('colors.white'),
+                    '--accentLight':theme('colors.accentLight'),
 
                   },
                 });
