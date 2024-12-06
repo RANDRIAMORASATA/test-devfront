@@ -1,11 +1,11 @@
 <template>
-    <div class="psychotechnical-section w-full py-10">
+    <div class="psychotechnical-section w-full py-6">
         <div class="psychotechnical-steps  py-10">
             <div class="psychotechnical-steps-container">
                 <div class="container  mx-auto flex justify-between  gap-x-8">
                     <div class="w-full lg:w-1/2 psychotechnical-image-container pr-6 flex justify-right ">
                         <div class="relative w-full h-auto">
-                            <img src="https://fakeimg.pl/300/" alt="Image 1" class="w-full h-auto">
+                            <img src="https://fakeimg.pl/300x200/" alt="Image 1" class="w-full h-auto">
                             <img src="https://fakeimg.pl/300/" alt="Image 3"
                                 class="absolute top-[15px] right-[-3rem] w-[8rem] h-[8rem] rounded-full">
 
@@ -39,7 +39,7 @@
 
                     <div class="w-full lg:w-1/2 psychotechnical-image-container pr-6 flex justify-right ">
                         <div class="w-full h-auto">
-                            <img src="https://fakeimg.pl/300/" alt="Image 4" class="w-full h-auto">
+                            <img src="https://fakeimg.pl/300x200/" alt="Image 4" class="w-full h-auto">
 
                         </div>
                     </div>
@@ -118,6 +118,8 @@ export default {
 
     .psychotechnical-image-container {
         margin-top: 3rem !important;
+        justify-content: center;
+        padding-right: 0 !important;
 
     }
 }
@@ -128,7 +130,10 @@ export default {
     .psychotechnical-image-container {
         order: initial;
 
+
     }
+
+
 
 
 

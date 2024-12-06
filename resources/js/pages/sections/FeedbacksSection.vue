@@ -131,5 +131,10 @@ export default {
         display: none;
     }
 
+    .container-slider {
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 </style>

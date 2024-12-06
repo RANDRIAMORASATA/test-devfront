@@ -33,7 +33,7 @@
             <span class="text-sm color-white see">Voir tous les avis clients aaaep.fr</span>
         </div>
 
-        <div class="lists-container flex w-full p-8 gap-[0.5rem] ">
+        <div class="lists-container flex w-full pl-10  py-6 gap-[0.5rem] ">
             <div class="list-footer-container w-[25%]  ">
                 <div class="title text-sm text-bold pb-2">
                     <span>Tous les tests psychotechnique</span>
@@ -172,17 +172,17 @@
                     <span>Les tests de départements</span>
                 </div>
                 <FilterDropdown label="" filter="département" :options="departementOptions" borderTopColor="none"
-                    borderBottomColor="none" class="bg-white  " />
+                    borderBottomColor="none" class="bg-white w-[65%] drop-list" />
 
                 <div class="title text-sm text-bold pb-2">
                     <span>Les préfectures de France</span>
                 </div>
                 <FilterDropdown label="" filter="département" :options="departementOptions" borderTopColor="none"
-                    borderBottomColor="none" class="bg-white  " />
+                    borderBottomColor="none" class="bg-white  w-[65%] drop-list" />
                 <div class="title text-sm text-bold p-2">
                     <span>Paiement sécurisé</span>
                 </div>
-                <img src="https://fakeimg.pl/250x100/" class="w-full">
+                <img src="https://fakeimg.pl/250x100/" class="w-[65%] drop-list">
                 <div class="title text-sm text-bold p-2">
                     <span>Controllez vos résultats</span>
                 </div>
@@ -271,6 +271,15 @@ export default {
         justify-content: center;
     }
 
+    .drop-list {
+        width: 100%;
+    }
+
+    .departement {
+        margin-top: -2rem;
+        margin-bottom: -2rem;
+    }
+
     .last-footer .regles,
     .last-footer .socials {
         width: 100%;
@@ -289,7 +298,7 @@ export default {
 
     .list-footer-container,
     .list-footer-container {
-        width: 45%;
+        width: 48%;
     }
 
 

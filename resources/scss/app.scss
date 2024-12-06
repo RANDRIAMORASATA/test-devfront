@@ -77,6 +77,9 @@
     display: none;
 }
 
+body {
+    overflow-x: hidden;
+}
 
 
 @media screen and (max-width:950px) {

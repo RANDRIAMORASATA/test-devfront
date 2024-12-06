@@ -1,12 +1,12 @@
 <template>
-    <div class="filter-dropdown flex items-center justify-center w-full">
+    <div class="filter-dropdown flex items-center justify-center">
         <div class="dropdown-container relative">
             <div :class="[customClass || borderClass
                 , 'relative dropdown-input flex justify-between items-center  py-2  cursor-pointer text-gray-600']"
                 @click="toggleDropdown">
                 <input v-model="selectedValue" :id="filter" :placeholder="` ${label}`"
                     class="dropdown w-3/4 bg-transparent  outline-none" readonly />
-                <i class="fas fa-chevron-down dropdown-icon text-gray-600"></i>
+                <i class="fas fa-chevron-down dropdown-icon text-gray-600 "></i>
 
             </div>
             <div v-show="isOpen" :class="{

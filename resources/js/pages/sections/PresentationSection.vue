@@ -16,7 +16,7 @@
 
             <div class=" container mx-auto  flex justify-between w-full">
 
-                <div class=" pb-10  pt-3 z-[3] presentation-section flex  justify-between  w-full gap-x-12">
+                <div class=" pb-6  pt-3 z-[3] presentation-section flex  justify-between  w-full gap-x-12">
                     <div class="  flex flex-col  space-y-6 w-full lg:w:1/2">
                         <div class=" tracking-tighter">
                             <h1 class="text-xl  font-bold ">
