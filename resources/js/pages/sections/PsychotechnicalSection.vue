@@ -1,6 +1,6 @@
 <template>
-    <div class="psychotechnical-section w-full py-6">
-        <div class="psychotechnical-steps  py-10">
+    <div class="psychotechnical-section w-full py-4">
+        <div class="psychotechnical-steps  py-6">
             <div class="psychotechnical-steps-container">
                 <div class="container  mx-auto flex justify-between  gap-x-8">
                     <div class="w-full lg:w-1/2 psychotechnical-image-container pr-6 flex justify-right ">

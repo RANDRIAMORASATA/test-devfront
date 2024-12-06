@@ -18,13 +18,13 @@
                             <span class="text-xs font-bold underline text-black">414 reviews</span>
                         </div>
                         <div class="google-logo-large w-[8rem] relative">
-                            <img :src="googleLarge" alt="google" class="absolute top-[-3rem]">
+                            <img :src="googleLarge" alt="google" class="absolute top-[-2rem]">
                         </div>
                     </div>
                     <div class="relative slides flex flex-1 gap-x-2">
                         <div @click="moveSlide(-1)"
-                            class="absolute prev text-sm text-accent top-[50%] left-[-25px] cursor-pointer">
-                            <i class="fa-solid fa-chevron-left"></i>
+                            class="absolute prev text-sm text-accent top-[40%] left-[-25px] cursor-pointer">
+                            <i class="fa-solid fa-chevron-left text-lg"></i>
                         </div>
 
 
@@ -33,8 +33,8 @@
                         </div>
 
                         <div @click="moveSlide(1)"
-                            class="absolute next text-sm text-accent top-[50%] right-[-25px] cursor-pointer">
-                            <i class="fa-solid fa-angle-right"></i>
+                            class="absolute next text-xs text-accent top-[40%] right-[-25px] cursor-pointer">
+                            <i class="fa-solid fa-angle-right text-lg"></i>
                         </div>
 
                     </div>
