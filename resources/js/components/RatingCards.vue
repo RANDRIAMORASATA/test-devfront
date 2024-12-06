@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-between gap-1 ">
+    <div class="rating-card flex justify-between gap-1 ">
         <div class=" p-4 border-gray-light-full flex flex-col items-center justify-center">
             <div class="flex items-center justify-between space-x-2">
                 <img :src="google" alt="google" class="w-[15px]" />
@@ -69,4 +69,14 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+@media screen and (max-width:1024px) {
+    .rating-card {
+        justify-content: center;
+    }
+
+    .rating-card .border-gray-light-full {
+        width: 100%;
+    }
+}
+</style>

@@ -88,4 +88,11 @@ button i {
 .search i.icon-search {
     font-size: 2rem;
 }
+
+@media screen and (max-width:1024px) {
+    .search i.send {
+        left: 42%;
+        font-size: 1.5rem;
+    }
+}
 </style>

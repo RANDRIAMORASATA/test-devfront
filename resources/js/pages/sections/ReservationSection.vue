@@ -16,7 +16,27 @@
                         class="bg-dark  font-lato text-white px-6 py-2 font-semibold rounded-lg focus:outline-none mb-1">Filtrer</button>
                     <a href="#" class="text-xxs text-center">Réinitialiser les filtres</a>
                 </div>
+
             </div>
+            <div class="none w-full rounded-xl  border-gray-light-full my-3 shadow-md flex">
+                <div
+                    class=" filtre-mobile fast w-[33.33%] border-gray-light-full p-2 flex flex-col justify-center items-center ">
+                    <span class="title text-sm">Le plus rapide</span>
+                    <span class="price text-lg">120 €</span>
+                </div>
+                <div
+                    class=" filtre-mobile cheaper w-[33.33%] border-gray-light-full p-2 flex flex-col justify-center items-center ">
+                    <span class="title text-sm">Le moins chèr</span>
+                    <span class="price text-lg">77 €</span>
+                </div>
+                <div
+                    class=" filtre-mobile highly-demanded w-[33.33%] border-gray-light-full p-2 flex flex-col justify-center items-center ">
+                    <span class="title text-sm">Fort démande</span>
+                    <span class="price text-lg">77 €</span>
+                </div>
+
+            </div>
+            <span class="text-xs"> 12 résultats </span>
             <SearchProgressBar />
             <div class="places-reservation w-full flex justify-between">
                 <div class="places w-[75%] flex justify-between py-10 flex-col gap-1">
@@ -24,6 +44,12 @@
                         <PropertyCard :day="property.day" :date="property.date" :address="property.address"
                             :urgentText="property.urgentText" :newPrice="property.newPrice"
                             :oldPrice="property.oldPrice" :availability="property.availability" />
+
+
+                    </div>
+                    <div class="container-btn-see-more none w-full justify-center items-center p-4">
+                        <button class="see-more bg-secondary text-white py-1 px-4 rounded hover:bg-green-600 ">Voir
+                            plus</button>
                     </div>
                 </div>
                 <div class="box-tests w-[25%] py-8 px-2">
@@ -225,5 +251,70 @@ export default {
 
 .bg-dark {
     background-color: var(--dark);
+}
+
+@media screen and (max-width:1024px) {
+    .filter-dropdown {
+        display: none;
+    }
+
+    .btns {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .btns button {
+        background-color: var(--accent);
+        color: black;
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .btns a {
+        display: none;
+    }
+
+    .places,
+    .box-tests {
+        width: 100%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .box-tests .text-sm,
+    .box-tests .border-gray-light-full {
+        display: flex;
+        justify-content: center;
+    }
+
+    .places-reservation {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filter-container .none {
+        display: block;
+    }
+
+    .filtre-mobile:hover {
+        background-color: var(--secondary);
+        color: white;
+        cursor: pointer;
+    }
+
+    .container-btn-see-more {
+        display: flex;
+    }
+
+    .container-btn-see-more button {
+        width: 40%;
+
+    }
+
 }
 </style>
